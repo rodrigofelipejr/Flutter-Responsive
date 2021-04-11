@@ -53,7 +53,51 @@ Por isso, é bom compreender a arvore de widgets e próprio widget atual para en
 
 ### Outros Widgets
 
-- ConstrainedBox (minHeight, maxHeight, minWidth, maxWidth)
-- UnconstrainedBox (ignora o tamanho do parent - com erro de overflow)
-- OverflowBox (ignora o tamanho do parent - sem erro de overflow)
-- LimitedBox (permite limita o tamanho do filho)
+- ConstrainedBox
+  - POssui atributos como minHeight, maxHeight, minWidth, maxWidth.
+
+- UnconstrainedBox
+  - Permite ignora o tamanho do parent.
+    - Pode ocorrer o erro de overflow.
+
+- OverflowBox
+  - Ignora o tamanho do parent.
+    - Não ocorre o erro de overflow.
+
+- LimitedBox
+  - Permite limita o tamanho do filho.
+
+- FittedBox
+  - Aumenta ou diminui seu filho, dependendo do espaço disponível.
+  - Não consegue escalar widgets com tamanhos infinitos.
+
+- Row
+  - Comportamento similar a UnconstrainedBox, com relação ao tamanho dos filhos...
+  - Ela não define tamanho máximo para os filhos
+  - Interessante utilização com **Expanded** e **Flexible**
+
+- Constraint ***Loose***
+  - O filho é obrigado a ter um tamanho máximo.
+
+```flutter
+BoxConstraints.loose (Size size)
+  : minWidth = 0.0,
+  : maxWidth = size.width,
+  : minHeight = 0.0,
+  : maxHeight = size.height,
+```
+
+- Constraint ***Tight***
+  - Quando um valor de constraint é definido.
+  - A tela impõe um tipo de constraint tight.
+
+```flutter
+BoxConstraints.tight (Size size)
+  : minWidth = size.width,
+  : maxWidth = size.width,
+  : minHeight =size.height,
+  : maxHeight = size.height,
+```
+
+- SizedBox.expand
+  - O tamanho do filho seja exatamente o tamanho do parent.

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/modules/advanced/pages/constrainedbox_wdiget.dart';
 import 'package:flutter_app/modules/advanced/pages/constraints_widget.dart';
+import 'package:flutter_app/modules/advanced/pages/fittedbox_widget.dart';
 import 'package:flutter_app/modules/advanced/pages/limitedbox_widget.dart';
 import 'package:flutter_app/modules/advanced/pages/overflowbox_widget.dart';
 import 'package:flutter_app/modules/advanced/pages/unconstrainedbox_widget.dart';
@@ -37,6 +38,10 @@ class Advanced extends StatelessWidget {
               ElevatedButtonWidget(
                 label: "LimitedBox",
                 widget: LimitedBoxWidget(),
+              ),
+              ElevatedButtonWidget(
+                label: "FittedBox",
+                widget: FittedBoxWidget(),
               ),
             ],
           ),

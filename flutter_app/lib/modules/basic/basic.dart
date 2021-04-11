@@ -78,6 +78,5 @@ class Basic extends StatelessWidget {
         ),
       ),
     );
-    ;
   }
 }
