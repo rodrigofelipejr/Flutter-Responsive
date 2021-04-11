@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/widgets/square_widget.dart';
 
-class Page11 extends StatelessWidget {
+class GridViewCountWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text("ListView"),
+        title: Text("GridView - Count"),
       ),
       body: GridView.count(
         crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait ? 2 : 4,

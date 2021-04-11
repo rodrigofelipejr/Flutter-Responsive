@@ -44,3 +44,16 @@ No flutter nos sempre trabalhamos com pixes lógicos
 - O widget não pode ter o tamanho que quiser (o parent que vai definir seus constraints).
 - O widget não sabe e não decide a sua posição na tela. 
 - Impossível saber o tamanho e posição de um widget sem olhar a árvore como um todo.
+
+### Widgets e seus comportamentos
+
+Alguns widgets possuem comportamento específicos, como o container, que quando não possui um filho, pode ocupar o tamanho máximo disponível, ou quando possui filho e não existir atributos que definam seu tamanho, pode assumir o mesmo tamanho do filho.
+
+Por isso, é bom compreender a arvore de widgets e próprio widget atual para entender o seu possível comportamento.
+
+### Outros Widgets
+
+- ConstrainedBox (minHeight, maxHeight, minWidth, maxWidth)
+- UnconstrainedBox (ignora o tamanho do parent - com erro de overflow)
+- OverflowBox (ignora o tamanho do parent - sem erro de overflow)
+- LimitedBox (permite limita o tamanho do filho)

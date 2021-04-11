@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/widgets/square_widget.dart';
 
-class Page10 extends StatelessWidget {
+class ListViewWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
