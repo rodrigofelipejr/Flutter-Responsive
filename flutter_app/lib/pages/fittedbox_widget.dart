@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/widgets/square_widget.dart';
 
-class Page9 extends StatelessWidget {
+class FittedBoxWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

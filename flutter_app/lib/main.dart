@@ -1,17 +1,17 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app/pages/page_1.dart';
-import 'package:flutter_app/pages/page_10.dart';
-import 'package:flutter_app/pages/page_11.dart';
-import 'package:flutter_app/pages/page_12.dart';
-import 'package:flutter_app/pages/page_2.dart';
-import 'package:flutter_app/pages/page_3.dart';
-import 'package:flutter_app/pages/page_4.dart';
-import 'package:flutter_app/pages/page_5.dart';
-import 'package:flutter_app/pages/page_6.dart';
-import 'package:flutter_app/pages/page_7.dart';
-import 'package:flutter_app/pages/page_8.dart';
-import 'package:flutter_app/pages/page_9.dart';
+import 'package:flutter_app/pages/align_widget.dart';
+import 'package:flutter_app/pages/alignment_widget.dart';
+import 'package:flutter_app/pages/expanded_widget.dart';
+import 'package:flutter_app/pages/fittedbox_widget.dart';
+import 'package:flutter_app/pages/flexible_widget.dart';
+import 'package:flutter_app/pages/gridview_count_widget.dart';
+import 'package:flutter_app/pages/gridview_extent_widget.dart';
+import 'package:flutter_app/pages/listview_widget.dart';
+import 'package:flutter_app/pages/mediaquery_widget.dart';
+import 'package:flutter_app/pages/orientation_widget.dart';
+import 'package:flutter_app/pages/positioned_widget.dart';
+import 'package:flutter_app/pages/wrap_widget.dart';
 import 'package:flutter_app/widgets/elevated_button_widget.dart';
 
 void main() => runApp(DevicePreview(
@@ -56,51 +56,51 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             ElevatedButtonWidget(
               label: "MediaQuery",
-              widget: Page1(),
+              widget: MediaQueryWidget(),
             ),
             ElevatedButtonWidget(
               label: "Expanded",
-              widget: Page2(),
+              widget: ExpandedWidget(),
             ),
             ElevatedButtonWidget(
               label: "Flexible",
-              widget: Page3(),
+              widget: FlexibleWidget(),
             ),
             ElevatedButtonWidget(
               label: "Wrap",
-              widget: Page4(),
+              widget: WrapWidget(),
             ),
             ElevatedButtonWidget(
-              label: "Align 1",
-              widget: Page5(),
+              label: "Align",
+              widget: AlignWidget(),
             ),
             ElevatedButtonWidget(
-              label: "Align 2",
-              widget: Page6(),
+              label: "Alignment",
+              widget: AlignmentWidget(),
             ),
             ElevatedButtonWidget(
               label: "Positioned",
-              widget: Page7(),
+              widget: PositionedWidget(),
             ),
             ElevatedButtonWidget(
-              label: "Orientation Builder",
-              widget: Page8(),
+              label: "Orientation",
+              widget: OrientationWidget(),
             ),
             ElevatedButtonWidget(
               label: "FittedBox",
-              widget: Page9(),
+              widget: FittedBoxWidget(),
             ),
             ElevatedButtonWidget(
               label: "ListView",
-              widget: Page10(),
+              widget: ListViewWidget(),
             ),
             ElevatedButtonWidget(
-              label: "GridView - COUNT",
-              widget: Page11(),
+              label: "GridView - Count",
+              widget: GridViewCountWidget(),
             ),
             ElevatedButtonWidget(
-              label: "GridView - EXTENT",
-              widget: Page12(),
+              label: "GridView - Extent",
+              widget: GridViewExtentWidget(),
             ),
           ],
         ),

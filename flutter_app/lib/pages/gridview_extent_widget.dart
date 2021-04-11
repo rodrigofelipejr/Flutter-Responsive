@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/widgets/square_widget.dart';
 
-class Page12 extends StatelessWidget {
+class GridViewExtentWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text("ListView"),
+        title: Text("GridView - Extent"),
       ),
       body: GridView.extent(
         maxCrossAxisExtent: 100.0,

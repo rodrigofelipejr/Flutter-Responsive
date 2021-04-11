@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/widgets/square_widget.dart';
 
-class Page8 extends StatelessWidget {
+class OrientationWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Outra alternativa
