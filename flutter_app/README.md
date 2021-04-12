@@ -51,7 +51,7 @@ Alguns widgets possuem comportamento específicos, como o container, que quando 
 
 Por isso, é bom compreender a arvore de widgets e próprio widget atual para entender o seu possível comportamento.
 
-### Outros Widgets
+### Outros Widgets 1
 
 - ConstrainedBox
   - POssui atributos como minHeight, maxHeight, minWidth, maxWidth.
@@ -101,3 +101,28 @@ BoxConstraints.tight (Size size)
 
 - SizedBox.expand
   - O tamanho do filho seja exatamente o tamanho do parent.
+
+### Outros Widgets 2
+
+- Layout Builder
+  - É possível identificar sobre quais constraints o seu widget está submetido e a partir dai, tomar decisões.
+  - Recuperar a resolução da tela, etc...
+  - Lembrando que isso pode ser muito útil para TRECHOS DA TELA.
+
+- Fractionally SizedBox
+  - Uma forma de se trabalhar com widgets de tamanhos percentuais da tela.
+  - Deve ser utilizando com widgets com constraints loose.
+    - Columns e Rows não são loose. 
+    - É possível envolve-lo em um **flexible** por exemplo. 
+  - Possui alinhamento como propriedade.
+
+- Intrinsic Height
+  - Vai nivelar a altura dos widgets pelo maior.
+
+-Intrinsic Width
+  - Vai nivelar a largura dos widgets pelo maior.
+
+### Packages
+
+Packages que auxiliam na responsividade de textos.
+  - auto_size_text
