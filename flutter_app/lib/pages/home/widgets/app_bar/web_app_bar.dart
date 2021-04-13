@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/pages/home/widgets/web_app_bar_responsive_content.dart';
+import 'package:flutter_app/pages/home/widgets/app_bar/web_app_bar_responsive_content.dart';
 
 class WebAppBar extends StatelessWidget {
   @override
