@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/breakpoint.dart';
 import 'package:flutter_app/pages/home/widgets/app_bar/mobile_app_bar.dart';
 import 'package:flutter_app/pages/home/widgets/app_bar/web_app_bar.dart';
-import 'package:flutter_app/pages/home/widgets/sections/advantages_ection.dart';
+import 'package:flutter_app/pages/home/widgets/sections/advantages_section.dart';
+import 'package:flutter_app/pages/home/widgets/sections/course_section.dart';
 import 'package:flutter_app/pages/home/widgets/sections/top_section.dart';
 
 class HomePage extends StatelessWidget {
@@ -30,6 +31,7 @@ class HomePage extends StatelessWidget {
                 children: [
                   TopSection(),
                   AdvantagesSection(),
+                  CoursesSection(),
                 ],
               ),
             ),

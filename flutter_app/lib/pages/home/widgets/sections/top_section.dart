@@ -7,7 +7,7 @@ class TopSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth >= 1200)
+        if (constraints.maxWidth >= tabletBreakpoint)
           return AspectRatio(
             aspectRatio: 3.2,
             child: Stack(
