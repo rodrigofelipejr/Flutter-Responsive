@@ -42,7 +42,7 @@ class TopSection extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(bottom: 8.0),
+                            padding: const EdgeInsets.only(bottom: 16.0),
                             child: Text(
                               "Bora aprender Flutter coom o professor Daniel Ciofi! Curso por apenas R\$ 22,90. Qualidade garantida.",
                               style: TextStyle(
@@ -97,7 +97,7 @@ class TopSection extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(bottom: 8.0),
+                            padding: const EdgeInsets.only(bottom: 16.0),
                             child: Text(
                               "Bora aprender Flutter coom o professor Daniel Ciofi! Curso por apenas R\$ 22,90. Qualidade garantida.",
                               style: TextStyle(
@@ -116,7 +116,47 @@ class TopSection extends StatelessWidget {
             ),
           );
 
-        return Container();
+        return Column(
+          children: [
+            AspectRatio(
+              aspectRatio: 3.4,
+              child: Image.asset(
+                "assets/images/image-1.jpg",
+                fit: BoxFit.cover,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 8.0),
+                    child: Text(
+                      "Aprenda Flutter com este curso",
+                      style: TextStyle(
+                        fontSize: 36.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 16.0),
+                    child: Text(
+                      "Bora aprender Flutter coom o professor Daniel Ciofi! Curso por apenas R\$ 22,90. Qualidade garantida.",
+                      style: TextStyle(
+                        fontSize: 16.0,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  CustomSearchField(),
+                ],
+              ),
+            ),
+          ],
+        );
       },
     );
   }

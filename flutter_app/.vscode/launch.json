@@ -9,19 +9,5 @@
       "request": "launch",
       "type": "dart"
     },
-    {
-      "name": "flutter_web",
-      "program": "./lib/main.dart",
-      "request": "launch",
-      "type": "dart",
-      "args": [
-        "--web-port",
-        "8080",
-        "--web-hostname",
-        "127.0.0.1",
-        "--chrome-args",
-        "--disable-web-security --user-data-dir 'a-temp-location"
-      ]
-    }
   ]
 }
