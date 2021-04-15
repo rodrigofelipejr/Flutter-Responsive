@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_app/breakpoint.dart';
+import 'package:flutter_app/pages/home/widgets/course_item.dart';
 
 class CoursesSection extends StatelessWidget {
   @override
@@ -20,7 +21,7 @@ class CoursesSection extends StatelessWidget {
           ),
           physics: NeverScrollableScrollPhysics(),
           itemBuilder: (context, index) {
-            return Container(color: Colors.red);
+            return CourseItem();
           },
           shrinkWrap: true,
         );
