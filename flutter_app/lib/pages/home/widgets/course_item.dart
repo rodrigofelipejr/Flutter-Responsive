@@ -7,53 +7,60 @@ class CourseItem extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Padding(
-          padding: const EdgeInsets.only(bottom: 8.0),
+        AspectRatio(
+          aspectRatio: 16 / 9,
           child: Image.asset(
             "assets/images/image-2.jpg",
             fit: BoxFit.fitWidth,
           ),
         ),
-        Expanded(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Flexible(
-                  child: LayoutBuilder(
-                    builder: (context, constraints) {
-                      print(constraints.biggest);
-
-                      return AutoSizeText(
-                        "Criação de Apps Android e iOS com Flutter - Crie 16 Apps",
-                        minFontSize: 1,
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16.0,
-                          color: Colors.white,
-                        ),
-                      );
-                    },
-                  ),
+        SizedBox(height: 8.0),
+        // Flexible(
+        //   child: LayoutBuilder(
+        //     builder: (context, constraints) {
+        //       return AutoSizeText(
+        //         "Criação de Apps Android e iOS com Flutter - Crie 16 Apps",
+        //         minFontSize: 8.0,
+        //         style: TextStyle(
+        //           fontWeight: FontWeight.bold,
+        //           fontSize: 16.0,
+        //           color: Colors.white,
+        //         ),
+        //       );
+        //     },
+        //   ),
+        // ),
+        //  Flexible(
+        Flexible(
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              return AutoSizeText(
+                "Criação de Apps Android e iOS com Flutter - Crie 16 Apps",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 14.0,
+                  color: Colors.white,
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 6.0),
-                  child: Text(
-                    "Daniel Ciolfi",
-                    style: TextStyle(color: Colors.grey),
-                  ),
-                ),
-                Text(
-                  "R\$ 22,90",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 14.0,
-                    color: Colors.white,
-                  ),
-                ),
-              ],
-            ),
+              );
+            },
+          ),
+        ),
+        SizedBox(height: 2.0),
+        AutoSizeText(
+          "Daniel Ciolfi",
+          style: TextStyle(
+            color: Colors.grey,
+            fontSize: 13.0,
+          ),
+          minFontSize: 12.0,
+        ),
+        SizedBox(height: 2.0),
+        Text(
+          "R\$ 22,90",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 14.0,
+            color: Colors.white,
           ),
         ),
       ],

@@ -20,9 +20,7 @@ class CoursesSection extends StatelessWidget {
             horizontal: constraints.maxWidth >= tabletBreakpoint ? 0 : 16.0,
           ),
           physics: NeverScrollableScrollPhysics(),
-          itemBuilder: (context, index) {
-            return CourseItem();
-          },
+          itemBuilder: (context, index) => CourseItem(),
           shrinkWrap: true,
         );
       },
