@@ -5,12 +5,13 @@ import 'package:responsive_framework/responsive_framework.dart';
 class StoriesListWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final bool mobile = ResponsiveWrapper.of(context).isMobile;
+    final bool isMobile = ResponsiveWrapper.of(context).isMobile;
 
     return Container(
       height: 110.0,
-      margin: EdgeInsets.symmetric(vertical: mobile ? 5 : 35),
+      margin: EdgeInsets.symmetric(vertical: isMobile ? 16.0 : 36.0),
       child: ListView.separated(
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) => StoryCircleWidget(),
         separatorBuilder: (context, index) => const SizedBox(width: 16.0),

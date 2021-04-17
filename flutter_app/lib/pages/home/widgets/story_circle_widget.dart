@@ -34,7 +34,7 @@ class StoryCircleWidget extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(height: 8.0),
+        const SizedBox(height: 6.0),
         Text(
           "the_lion",
           style: TextStyle(
