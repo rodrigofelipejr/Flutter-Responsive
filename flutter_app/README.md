@@ -119,7 +119,7 @@ BoxConstraints.tight (Size size)
 - Intrinsic Height
   - Vai nivelar a altura dos widgets pelo maior.
 
--Intrinsic Width
+- Intrinsic Width
   - Vai nivelar a largura dos widgets pelo maior.
 
 ### Packages
