@@ -2,8 +2,6 @@
 
 Práticas do curso de [Responsividade no Flutter | Mobile, Tablet, Web e Desktop - UDEMY](https://www.udemy.com/course/responsividade-flutter/)
 
-Navegue entre os **branches**...
-
 ## Pixel lógico
 
 Em 1 cm de tela deve existir 38 pixels lógicos (isso na teoria).
@@ -15,39 +13,6 @@ Pixel Físico / Pixel Lógico
 ## Observações
 
 No flutter nos sempre trabalhamos com pixes lógicos
-
-================================
-
-## Responsividade básica
-
-- MediaQuery (width ou height)
-- Expanded
-- Flexible
-- Wrap
-- Align
-- Align
-- Positioned
-- Orientation builder ou MediaQuery (orientation)
-- FittedBox
-- ListView
-- GridView
-
-
-# Fluter Responsivo
-
-## Pixel lógico
-
-Em 1 cm de tela deve existir 38 pixels lógicos (isso na teoria).
-
-## DevicePixelRatio
-
-Pixel Físico / Pixel Lógico
-
-## Observações
-
-No flutter nos sempre trabalhamos com pixes lógicos
-
-================================
 
 ## Responsividade básica
 
@@ -164,52 +129,15 @@ BoxConstraints.tight (Size size)
 Packages que auxiliam na responsividade de textos.
   - auto_size_text
 
-================================
-
-# Fluter Responsivo
-
-## Pixel lógico
-
-Em 1 cm de tela deve existir 38 pixels lógicos (isso na teoria).
-
-## DevicePixelRatio
-
-Pixel Físico / Pixel Lógico
-
-## Observações
-
-No flutter nos sempre trabalhamos com pixes lógicos
-
-## Responsividade básica
-
-- MediaQuery (width ou height)
-- Expanded
-- Flexible
-- Wrap
-- Align
-- Align
-- Positioned
-- Orientation builder ou MediaQuery (orientation)
-- FittedBox
-- ListView
-- GridView
-
-================================
-
-# Flutter Responsive
-
-Práticas do curso de [Responsividade no Flutter | Mobile, Tablet, Web e Desktop - UDEMY](https://www.udemy.com/course/responsividade-flutter/)
-
 ## Responsive Framework
 
 Prática com uso do [responsive_framework](https://pub.dev/packages/responsive_framework).
 
-![Resultado](./file.gif)
+![Resultado](./responsive_framework_file.gif)
 
-================================
 
 # Flutter Responsive
 
 Práticas do curso de [Responsividade no Flutter | Mobile, Tablet, Web e Desktop - UDEMY](https://www.udemy.com/course/responsividade-flutter/)
 
-![Resultado](./file.gif)
+![Resultado](./responsividade_flutter_file.gif)
