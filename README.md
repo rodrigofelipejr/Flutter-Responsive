@@ -56,7 +56,7 @@ Por isso, é bom compreender a arvore de widgets e próprio widget atual para en
 ### Outros Widgets 1
 
 - ConstrainedBox
-  - POssui atributos como minHeight, maxHeight, minWidth, maxWidth.
+  - Possui atributos como minHeight, maxHeight, minWidth, maxWidth.
 
 - UnconstrainedBox
   - Permite ignora o tamanho do parent.
